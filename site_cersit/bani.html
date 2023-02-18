@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>plata</title>
+</head>
+<body>
+<header style="text-align: center">
+  <section>
+    <form>
+      <label for="donatie">Selecteaza suma pe care doresti sa o donezi:</label>
+      <br>
+      <input type="number" id="donatie" name="donatie" step="1" min="0" required>
+    </form>
+  </section>
+</header>
+<br><br><br>
+<main style="text-align: center">
+  <section>
+    <form action="./multumiri.html" method="post">
+      <label for="creditCard1">Numar Card:</label>
+      <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard1" id="creditCard1" required/>
+      -
+      <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard2" id="creditCard2" required/>
+      -
+      <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard3" id="creditCard3" required/>
+      -
+      <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard4" id="creditCard4" required/>
+
+      <br><br>
+
+      <label for="first_name">Nume:</label>
+      <input type="text" id="first_name" name="first_name" pattern="[a-zA-Z]*" required>
+
+      <label for="lastname">Prenume:</label>
+      <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+
+      <br><br>
+
+      <label for="tip_card">Tip Card:</label>
+      <select id="tip_card" required>
+        <option>Visa</option>
+        <option>MasterCard</option>
+        <option>Revolut?</option>
+      </select>
+
+      <label for="cvv">Cod CVV:</label>
+      <input type="text" pattern="[0-9]*" id="cvv" name="cvv" maxlength="3" value="xxx" required>
+
+
+      <br><br>
+
+      Data Expiratii:
+      <select name='expireMM' id='expireMM' required>
+        <option value=''>Luna</option>
+        <option value='01'>Ianuarie</option>
+        <option value='02'>Februarie</option>
+        <option value='03'>Martie</option>
+        <option value='04'>Aprilie</option>
+        <option value='05'>Mai</option>
+        <option value='06'>Iunie</option>
+        <option value='07'>Iulie</option>
+        <option value='08'>August</option>
+        <option value='09'>Septembrie</option>
+        <option value='10'>Octombrie</option>
+        <option value='11'>Noiembrie</option>
+        <option value='12'>Decembrie</option>
+      </select>
+      <select name='expireYY' id='expireYY' required>
+        <option value=''>An</option>
+        <option value='20'>2023</option>
+        <option value='21'>2024</option>
+        <option value='22'>2025</option>
+        <option value='23'>2026</option>
+        <option value='24'>2027</option>
+      </select>
+      <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+
+      <br><br>
+
+      <input type="submit" value="Trimite" href="http://localhost:63342/untitled1/button.html?_ijt=17g8g5ulev0vr9fr6j75or7nlv&_ij_reload=RELOAD_ON_SAVE">
+    </form>
+
+  </section>
+</main>
+</body>
+</html>
